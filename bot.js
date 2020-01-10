@@ -1,6 +1,6 @@
 ﻿const Discord = require("discord.js");
 const client = new Discord.Client();
-const prefix = "$";
+const prefix = "-";
 
 
 
@@ -11,7 +11,8 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Brodcast Bot ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`$bc |DF_Team`,"http://twitch.tv/Death Shop")
+client.user.setGame(`crated by {ps4-ms6ol} for veiGncold Team store
+`,"http://twitch.tv/Death Shop")
 client.user.setStatus("dnd")
 });
 
@@ -29,7 +30,7 @@ client.on("message", async message => {
                     if(!args) {
                         return message.reply("**يجب عليك كتابة كلمة او جملة لإرسال البرودكاست**");
                     }
-                        message.channel.send(`**هل أنت متأكد من إرسالك البرودكاست؟\nمحتوى البرودكاست: \`${args}\`**`).then(m => {
+                        message.channel.send(`**هل أنت متأكد من إرسالك هذا البرودكاست؟\nمحتوى البرودكاست: \`${args}\`**`).then(m => {
                             m.react("✅")
                             .then(() => m.react("❌"));
 
@@ -68,7 +69,7 @@ client.on("message", async message => {
                     if(!args) {
                         return message.reply("**يجب عليك كتابة كلمة او جملة لإرسال البرودكاست**");
                     }
-                        message.channel.send(`**هل أنت متأكد من إرسالك البرودكاست؟\nمحتوى البرودكاست: \`${args}\`**`).then(m => {
+                        message.channel.send(`**هل أنت متأكد من إرسالك هذا البرودكاست؟\nمحتوى البرودكاست: \`${args}\`**`).then(m => {
                             m.react("✅")
                             .then(() => m.react("❌"));
 
